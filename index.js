@@ -7,6 +7,7 @@ const submit = document.getElementsByClassName('body-container')[0];
 
 submit.addEventListener('submit', (e) => {
   e.preventDefault();
+  console.log("Clicked");
   
   let ebody = `
   <b>Name : </b>${fname.value}&nbsp;${lname.value}
