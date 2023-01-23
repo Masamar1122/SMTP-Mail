@@ -1,8 +1,19 @@
+:root {
+   --bgcolor: #36454F;
+   --silverwhite: #DADBDD;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: var(--bgcolor);
   font-family: 'Roboto', Sans-Serif;
+}
+
+h1 {
+  color: var(--silverwhite);
+  font-size: 32px;
 }
 
 .body-container {
@@ -13,7 +24,8 @@ body {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-  background-color: #3A3B3C;
+  background-color: rgba(119,136,153,0.7);
+  border: solid 2px rgba(0,255,255,0.3);
   border-radius: 16px;
   position: absolute;
   top: 50%;
@@ -49,4 +61,44 @@ input[type="submit"] {
   width: fit-content;
   padding: 10px 24px;
   cursor: pointer;
+}
+
+@media screen and (min-width:768px) {
+  .body-container {
+    width: 500px;
+    padding: 2rem;
+    gap: 2rem;
+}
+  input {
+    width: 85%;
+    height: 20px;
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+  textarea {
+    width: 85%;
+    height: 150px;
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+  textarea::-webkit-input-placeholder {
+    font-size: 20px;
+}
+
+  input[type="submit"] {
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+  h1 {
+    font-size: 44px;
+  }
+
 }
